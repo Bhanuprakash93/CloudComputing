@@ -45,7 +45,7 @@ jobs:
         id: deploy
         run: |
           aws deploy create-deployment \
-            --application-name bhanuprakash_application \
-            --deployment-group-name bhanudeployment_group \
+            --application-name Prasad_EndTerm_Apllication \
+            --deployment-group-name Prasad_Deployment \
             --deployment-config-name CodeDeployDefault.OneAtATime \
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
